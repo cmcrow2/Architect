@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS characteristics_reviews (
 );
 
 CREATE TABLE IF NOT EXISTS reviews (
-  id int,
+  review_id int,
   product_id int,
   rating int,
   date varchar(100),
