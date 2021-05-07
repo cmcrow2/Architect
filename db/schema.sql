@@ -1,20 +1,18 @@
 CREATE TABLE IF NOT EXISTS characteristics (
-  id int,
+  id int SERIAL PRIMARY KEY,
   product_id int,
-  name varchar(50),
-  PRIMARY KEY (id)
+  name varchar(50)
 );
 
 CREATE TABLE IF NOT EXISTS characteristics_reviews (
-  id int,
+  id int SERIAL PRIMARY KEY,
   characteristic_id int,
   review_id int,
-  value int,
-  PRIMARY KEY (id)
+  value int
 );
 
 CREATE TABLE IF NOT EXISTS reviews (
-  review_id int,
+  review_id int SERIAL PRIMARY KEY,
   product_id int,
   rating int,
   date varchar(100),
@@ -25,15 +23,13 @@ CREATE TABLE IF NOT EXISTS reviews (
   reviewer_name varchar(100),
   reviewer_email varchar(100),
   response varchar(1000),
-  helpfulness int,
-  PRIMARY KEY (id)
+  helpfulness int
 );
 
 CREATE TABLE IF NOT EXISTS reviews_photos (
-  id int,
+  id int SERIAL PRIMARY KEY,
   review_id int,
-  url varchar(1000),
-  PRIMARY KEY (id)
+  url varchar(1000)
 );
 
 -- COPY characteristics

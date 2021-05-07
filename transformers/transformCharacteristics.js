@@ -18,6 +18,7 @@ fs.createReadStream(characteristicsFilePath)
   .on('data', function(data){
     try {
       if (data.name) {
+        delete data.id
         transformedData.push(data);
       }
     }
