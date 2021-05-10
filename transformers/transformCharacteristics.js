@@ -2,9 +2,9 @@ var fs = require('fs');
 var csvParse = require('csv-parser');
 var csvWrite = require('csv-writer').createObjectCsvWriter;
 
-var characteristicsFilePath = './characteristics.csv';
+var characteristicsFilePath = '././csvOriginals/characteristics.csv';
 var csvWriter = csvWrite({
-  path: './transformedCharacteristics.csv',
+  path: '././csvs/transformedCharacteristics.csv',
   header: [
     {id: 'id', title: 'id'},
     {id: 'product_id', title: 'product_id'},
@@ -18,7 +18,6 @@ fs.createReadStream(characteristicsFilePath)
   .on('data', function(data){
     try {
       if (data.name) {
-        delete data.id
         transformedData.push(data);
       }
     }

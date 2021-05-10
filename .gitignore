@@ -1,5 +1,6 @@
 .DS_store
 csvs
+csvOriginals
 config.js
 
 # Logs
