@@ -1,0 +1,22 @@
+version: '3'
+services:
+  db:
+    image: 'postgres:latest'
+    environment:
+      POSTGRES_PASSWORD: 'password'
+      POSTGRES_USER: cameroncrow
+      POSTGRES_DB: sdc
+      DATABASE_URL: postgres://cameroncrow:@localhost:5432/sdc
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+  web:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: 'postgres'
+    depends_on:
+      - db
+    ports:
+      - '3000:3001'
