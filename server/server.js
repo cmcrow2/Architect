@@ -35,7 +35,6 @@ app.post('/reviews/:product_id', (req, response) => {
 app.put('/reviews/report/:review_id', (req, response) => {
   // query goes here
   queries.reportReview(req.params.review_id, (err, res) => {
-    console.log('yay');
     response.send(res);
   });
 });
