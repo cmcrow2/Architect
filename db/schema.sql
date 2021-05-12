@@ -74,3 +74,8 @@ CSV HEADER;
 
 ALTER SEQUENCE reviews_review_id_seq RESTART WITH 5774953;
 ALTER SEQUENCE reviews_photos_id_seq RESTART WITH 2742541;
+
+CREATE INDEX idx_characteristics ON characteristics(product_id);
+CREATE INDEX idx_characteristics_reviews ON characteristics_reviews(characteristic_id);
+CREATE INDEX idx_reviews ON reviews(product_id);
+CREATE INDEX idx_reviews_photos ON reviews_photos(review_id);
