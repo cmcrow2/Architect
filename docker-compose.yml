@@ -8,15 +8,17 @@ services:
       POSTGRES_DB: sdc
       DATABASE_URL: postgres://cameroncrow:@localhost:5432/sdc
     volumes:
-      - ./pgdata:/var/lib/postgresql/data
+      - ./my-db:/var/lib/postgresql/data
     ports:
       - '5432:5432'
   web:
     build:
       context: ./
       dockerfile: Dockerfile
-    image: 'postgres'
-    depends_on:
-      - db
+    image: 'server'
+    environment:
+      DB_HOST: host.docker.internal
+      DB_USER: cameroncrow
+      DB_PASS: password
     ports:
-      - '3000:3001'
+      - '3001:3001'

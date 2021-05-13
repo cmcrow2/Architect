@@ -1,5 +1,4 @@
 const { Pool } = require('pg');
-const info = require('../../.env');
 const moment = require('moment');
 require('dotenv').config();
 
