@@ -8,6 +8,11 @@ const PORT = 3001;
 const app = express();
 app.use(express.json());
 
+// LoaderIO GET Request
+app.get('/loaderio-3f41a61d1e54f97c5f5e5d9dfc1f69cc/', (req, res) => {
+  res.send('loaderio-3f41a61d1e54f97c5f5e5d9dfc1f69cc');
+});
+
 // GET ROUTES
 app.get('/reviews/:product_id', (req, response) => {
   // query goes here
