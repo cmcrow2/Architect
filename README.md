@@ -1,6 +1,6 @@
 # SDC-Reviews-Service
 <br />
-<p align="center">
+<p align="left">
   <h1 align="center">System Design Capstone</h1>
 
   <p align="center">
