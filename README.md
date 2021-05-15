@@ -55,7 +55,7 @@ I was tasked with re-engineering the backend of the "Reviews" service of a mock 
   * Design and build an API server to provide data to the client in the format specified by the API documentation
   * Optimize database and query methods for speed and response
   * Deploy to the cloud using AWS
-  * Stress test all API routes, checking for RPS (requests per second), latency, and error rate
+  * Stress test all API routes, checking for RPS (requests per second), latency, and error rate via loader.io
 
 The final product, when tested with <a href="https://loader.io">loader.io</a> with a maximum of 667 users per second, registered an average response time of 14 ms with a 0.0% error rate.
 
@@ -106,33 +106,6 @@ The final product, when tested with <a href="https://loader.io">loader.io</a> wi
     </tr>
   </tbody>
 </table>
-
-
-## System Design
-**Features:**
-
-
-## Database and ETL
-**Features:**
-
-
-## API Server
-
-** write out list of different routes (and query strings to accompany them)
-
-
-## Optimization
-
-** indexing, (denormalization)
-
-
-## Deployment
-
-** AWS EC2 Docker
-
-
-## Stress Testing
-**loader.io, numbers and screenshots
 
 
 # Workflow
