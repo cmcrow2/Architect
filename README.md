@@ -10,7 +10,7 @@
      <strong>Author »</strong>
     <br />
     <br />
-    <a href="https://github.com/itsme-sunil">Sunil Gadgil</a>
+    <a href="https://github.com/cmcrow2">Cam Crow</a>
      </h3>
   </p>
 </p>
@@ -51,15 +51,15 @@
 </details>
 
 # About
-I was tasked with re-engineering the backend of the "Questions and Answers" service of a mock fashion website frontend. I designed:
+I was tasked with re-engineering the backend of the "Reviews" service of a mock fashion website frontend. I designed:
   * RESTful API to handle requests to a database system of my own choosing
-  * ETL (Extract, Transform, Load) process on a raw, flawed data set consisting of over twelve million records
+  * ETL (Extract, Transform, Load) process on a raw, flawed data set consisting of over thirty million records
   * Design and build an API server to provide data to the client in the format specified by the API documentation
   * Optimize database and query methods for speed and response
   * Deploy to the cloud using AWS
   * Stress test all API routes, checking for RPS (requests per second), latency, and error rate
 
-The final product, when tested with <a href="https://loader.io">loader.io</a> with a maximum of 667 users per second, registered an average response time of 5 ms with a 0.0% error rate.
+The final product, when tested with <a href="https://loader.io">loader.io</a> with a maximum of 667 users per second, registered an average response time of 14 ms with a 0.0% error rate.
 
 ![](Stress test screenshot)
 
@@ -105,7 +105,6 @@ The final product, when tested with <a href="https://loader.io">loader.io</a> wi
       <th>Deployment</th>
       <td>
         <img alt="AWS" src="https://img.shields.io/badge/AWS-%23FF9900.svg?&style=for-the-badge&logo=amazon-aws&logoColor=white"/>
-        <img alt="Docker" src="https://img.shields.io/badge/docker-%230db7ed.svg?&style=for-the-badge&logo=docker&logoColor=white"/>
       </td>
     </tr>
   </tbody>
@@ -115,42 +114,24 @@ The final product, when tested with <a href="https://loader.io">loader.io</a> wi
 ## System Design
 **Features:**
 
-  * *Search Bar*: searches on change for products by product name or category - clicking the search bar renders a drop-down list of products to choose from
-
-![](client/data/gifs/header.gif)
-
 
 ## Database and ETL
 **Features:**
-
-  * *Product Information*: dynamically renders information such as product rating, category, name, and price
-  * *Style Selector*: presents the user with all styles and has the ability to toggle between them
-  * *Add to Cart*: includes a size selector, capable of handling an out of stock size, button will add the currently selected item to the cart
-  * *Image Gallery*: displays photos specific to the currently selected style, and user can toggle an extended view on main image
-
-![](./client/data/gifs/overview.gif)
 
 
 ## API Server
 
 ** write out list of different routes (and query strings to accompany them)
-* (Morgan)
-
-  ![](./client/data/gifs/related.gif)
 
 
 ## Optimization
 
 ** indexing, (denormalization)
 
- ![](client/data/gifs/questions.gif)
-
 
 ## Deployment
 
 ** AWS EC2 Docker
-
- ![](./client/data/gifs/reviews.gif)
 
 
 ## Stress Testing
@@ -169,7 +150,7 @@ We utilized Git Feature Branch workflow. All pull requests in Github were review
 # Development
 
 ## Repo
-`git clone https://github.com/ht-atx55-team-timbre/project-catwalk.git`
+`git clone https://github.com/Team-San-Antonio/SDC-Reviews-Service.git`
 
 ## Install
 `npm install`
