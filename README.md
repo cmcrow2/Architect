@@ -57,7 +57,7 @@ I was tasked with re-engineering the backend of the "Reviews" service of a mock 
   * Deploy to the cloud using AWS
   * Stress test all API routes, checking for RPS (requests per second), latency, and error rate via loader.io
 
-The final product, when tested with <a href="https://loader.io">loader.io</a> with a maximum of 667 users per second, registered an average response time of 14 ms with a 0.0% error rate.
+The final product, when tested with <a href="https://loader.io">loader.io</a> with a maximum of 676 users per second, registered an average response time of 14 ms with a 0.0% error rate.
 
 ![](./loaderio.png)
 
