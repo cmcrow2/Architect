@@ -8,8 +8,6 @@
     <br />
     <h3 align="left">
      <strong>Author »</strong>
-    <br />
-    <br />
     <a href="https://github.com/cmcrow2">Cam Crow</a>
      </h3>
   </p>
