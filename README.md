@@ -59,7 +59,7 @@ I was tasked with re-engineering the backend of the "Reviews" service of a mock 
 
 The final product, when tested with <a href="https://loader.io">loader.io</a> with a maximum of 667 users per second, registered an average response time of 14 ms with a 0.0% error rate.
 
-![](./Screen Shot 2021-05-14 at 10.46.31 AM.png)
+![](./loaderio.png)
 
 
 # Stack
