@@ -1,7 +1,7 @@
-# SDC-Reviews-Service
+# Project Architect
 <br />
 <p align="left">
-  <h1 align="left">System Design Capstone</h1>
+  <h1 align="left">System Architecture Design</h1>
 
   <p align="left">
     Custom-built RESTful API to support server and database operations for a high-end fashion website that can scale to meet the demands of production traffic.
